@@ -2,9 +2,10 @@
 ---
 version: "v1"
 plugins:
-  - name: "grpc-python"
+  - remote: buf.build/protocolbuffers/plugins/python:v21.9.0-1
     out: "."
-    path: "grpc_python_plugin"
+  - remote: buf.build/grpc/plugins/python:v1.50.0-1
+    out: "."
   - name: "mypy"
     out: "."
   - name: "mypy_grpc"
