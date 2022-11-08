@@ -19,6 +19,7 @@ else:
 
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor
 
+@typing_extensions.final
 class DebugInformation(google.protobuf.message.Message):
     """DebugInformation defines debug information returned by an API call in a footer when
     requested with a specific debugging header.
@@ -48,6 +49,7 @@ class DebugInformation(google.protobuf.message.Message):
 
 global___DebugInformation = DebugInformation
 
+@typing_extensions.final
 class CheckDebugTrace(google.protobuf.message.Message):
     """CheckDebugTrace is a recursive trace of the requests made for resolving a CheckPermission
     API call.
@@ -85,6 +87,7 @@ class CheckDebugTrace(google.protobuf.message.Message):
     PERMISSIONSHIP_NO_PERMISSION: CheckDebugTrace.Permissionship.ValueType  # 1
     PERMISSIONSHIP_HAS_PERMISSION: CheckDebugTrace.Permissionship.ValueType  # 2
 
+    @typing_extensions.final
     class SubProblems(google.protobuf.message.Message):
         DESCRIPTOR: google.protobuf.descriptor.Descriptor
 

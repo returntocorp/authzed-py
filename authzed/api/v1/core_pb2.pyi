@@ -18,6 +18,7 @@ else:
 
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor
 
+@typing_extensions.final
 class Relationship(google.protobuf.message.Message):
     """Relationship specifies how a resource relates to a subject. Relationships
     form the data for the graph over which all permissions questions are
@@ -49,6 +50,7 @@ class Relationship(google.protobuf.message.Message):
 
 global___Relationship = Relationship
 
+@typing_extensions.final
 class SubjectReference(google.protobuf.message.Message):
     """SubjectReference is used for referring to the subject portion of a
     Relationship. The relation component is optional and is used for defining a
@@ -73,6 +75,7 @@ class SubjectReference(google.protobuf.message.Message):
 
 global___SubjectReference = SubjectReference
 
+@typing_extensions.final
 class ObjectReference(google.protobuf.message.Message):
     """ObjectReference is used to refer to a specific object in the system."""
 
@@ -92,6 +95,7 @@ class ObjectReference(google.protobuf.message.Message):
 
 global___ObjectReference = ObjectReference
 
+@typing_extensions.final
 class ZedToken(google.protobuf.message.Message):
     """ZedToken is used to provide causality metadata between Write and Check
     requests.
@@ -112,6 +116,7 @@ class ZedToken(google.protobuf.message.Message):
 
 global___ZedToken = ZedToken
 
+@typing_extensions.final
 class RelationshipUpdate(google.protobuf.message.Message):
     """RelationshipUpdate is used for mutating a single relationship within the
     service.
@@ -161,6 +166,7 @@ class RelationshipUpdate(google.protobuf.message.Message):
 
 global___RelationshipUpdate = RelationshipUpdate
 
+@typing_extensions.final
 class PermissionRelationshipTree(google.protobuf.message.Message):
     """PermissionRelationshipTree is used for representing a tree of a resource and
     its permission relationships with other objects.
@@ -193,6 +199,7 @@ class PermissionRelationshipTree(google.protobuf.message.Message):
 
 global___PermissionRelationshipTree = PermissionRelationshipTree
 
+@typing_extensions.final
 class AlgebraicSubjectSet(google.protobuf.message.Message):
     """AlgebraicSubjectSet is a subject set which is computed based on applying the
     specified operation to the operands according to the algebra of sets.
@@ -240,6 +247,7 @@ class AlgebraicSubjectSet(google.protobuf.message.Message):
 
 global___AlgebraicSubjectSet = AlgebraicSubjectSet
 
+@typing_extensions.final
 class DirectSubjectSet(google.protobuf.message.Message):
     """DirectSubjectSet is a subject set which is simply a collection of subjects."""
 

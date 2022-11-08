@@ -19,6 +19,7 @@ else:
 
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor
 
+@typing_extensions.final
 class Consistency(google.protobuf.message.Message):
     """Consistency will define how a request is handled by the backend.
     By defining a consistency requirement, and a token at which those
@@ -69,6 +70,7 @@ class Consistency(google.protobuf.message.Message):
 
 global___Consistency = Consistency
 
+@typing_extensions.final
 class RelationshipFilter(google.protobuf.message.Message):
     """RelationshipFilter is a collection of filters which when applied to a
     relationship will return relationships that have exactly matching fields.
@@ -101,6 +103,7 @@ class RelationshipFilter(google.protobuf.message.Message):
 
 global___RelationshipFilter = RelationshipFilter
 
+@typing_extensions.final
 class SubjectFilter(google.protobuf.message.Message):
     """SubjectFilter specifies a filter on the subject of a relationship.
 
@@ -110,6 +113,7 @@ class SubjectFilter(google.protobuf.message.Message):
 
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    @typing_extensions.final
     class RelationFilter(google.protobuf.message.Message):
         DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -141,6 +145,7 @@ class SubjectFilter(google.protobuf.message.Message):
 
 global___SubjectFilter = SubjectFilter
 
+@typing_extensions.final
 class ReadRelationshipsRequest(google.protobuf.message.Message):
     """ReadRelationshipsRequest specifies one or more filters used to read matching
     relationships within the system.
@@ -165,6 +170,7 @@ class ReadRelationshipsRequest(google.protobuf.message.Message):
 
 global___ReadRelationshipsRequest = ReadRelationshipsRequest
 
+@typing_extensions.final
 class ReadRelationshipsResponse(google.protobuf.message.Message):
     """ReadRelationshipsResponse contains a Relationship found that matches the
     specified relationship filter(s). A instance of this response message will
@@ -190,6 +196,7 @@ class ReadRelationshipsResponse(google.protobuf.message.Message):
 
 global___ReadRelationshipsResponse = ReadRelationshipsResponse
 
+@typing_extensions.final
 class Precondition(google.protobuf.message.Message):
     """Precondition specifies how and the existence or absence of certain
     relationships as expressed through the accompanying filter should affect
@@ -234,6 +241,7 @@ class Precondition(google.protobuf.message.Message):
 
 global___Precondition = Precondition
 
+@typing_extensions.final
 class WriteRelationshipsRequest(google.protobuf.message.Message):
     """WriteRelationshipsRequest contains a list of Relationship mutations that
     should be applied to the service. If the optional_preconditions parameter
@@ -260,6 +268,7 @@ class WriteRelationshipsRequest(google.protobuf.message.Message):
 
 global___WriteRelationshipsRequest = WriteRelationshipsRequest
 
+@typing_extensions.final
 class WriteRelationshipsResponse(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -276,6 +285,7 @@ class WriteRelationshipsResponse(google.protobuf.message.Message):
 
 global___WriteRelationshipsResponse = WriteRelationshipsResponse
 
+@typing_extensions.final
 class DeleteRelationshipsRequest(google.protobuf.message.Message):
     """DeleteRelationshipsRequest specifies which Relationships should be deleted,
     requesting the delete of *ALL* relationships that match the specified
@@ -304,6 +314,7 @@ class DeleteRelationshipsRequest(google.protobuf.message.Message):
 
 global___DeleteRelationshipsRequest = DeleteRelationshipsRequest
 
+@typing_extensions.final
 class DeleteRelationshipsResponse(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -320,6 +331,7 @@ class DeleteRelationshipsResponse(google.protobuf.message.Message):
 
 global___DeleteRelationshipsResponse = DeleteRelationshipsResponse
 
+@typing_extensions.final
 class CheckPermissionRequest(google.protobuf.message.Message):
     """CheckPermissionRequest issues a check on whether a subject has a permission
     or is a member of a relation, on a specific resource.
@@ -356,6 +368,7 @@ class CheckPermissionRequest(google.protobuf.message.Message):
 
 global___CheckPermissionRequest = CheckPermissionRequest
 
+@typing_extensions.final
 class CheckPermissionResponse(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -399,6 +412,7 @@ class CheckPermissionResponse(google.protobuf.message.Message):
 
 global___CheckPermissionResponse = CheckPermissionResponse
 
+@typing_extensions.final
 class ExpandPermissionTreeRequest(google.protobuf.message.Message):
     """ExpandPermissionTreeRequest returns a tree representing the expansion of all
     relationships found accessible from a permission or relation on a particular
@@ -435,6 +449,7 @@ class ExpandPermissionTreeRequest(google.protobuf.message.Message):
 
 global___ExpandPermissionTreeRequest = ExpandPermissionTreeRequest
 
+@typing_extensions.final
 class ExpandPermissionTreeResponse(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -459,6 +474,7 @@ class ExpandPermissionTreeResponse(google.protobuf.message.Message):
 
 global___ExpandPermissionTreeResponse = ExpandPermissionTreeResponse
 
+@typing_extensions.final
 class LookupResourcesRequest(google.protobuf.message.Message):
     """LookupResourcesRequest performs a lookup of all resources of a particular
     kind on which the subject has the specified permission or the relation in
@@ -497,6 +513,7 @@ class LookupResourcesRequest(google.protobuf.message.Message):
 
 global___LookupResourcesRequest = LookupResourcesRequest
 
+@typing_extensions.final
 class LookupResourcesResponse(google.protobuf.message.Message):
     """LookupResourcesResponse contains a single matching resource object ID for the
     requested object type, permission, and subject.
@@ -520,6 +537,7 @@ class LookupResourcesResponse(google.protobuf.message.Message):
 
 global___LookupResourcesResponse = LookupResourcesResponse
 
+@typing_extensions.final
 class LookupSubjectsRequest(google.protobuf.message.Message):
     """LookupSubjectsRequest performs a lookup of all subjects of a particular
     kind for which the subject has the specified permission or the relation in
@@ -564,6 +582,7 @@ class LookupSubjectsRequest(google.protobuf.message.Message):
 
 global___LookupSubjectsRequest = LookupSubjectsRequest
 
+@typing_extensions.final
 class LookupSubjectsResponse(google.protobuf.message.Message):
     """LookupSubjectsResponse contains a single matching subject object ID for the
     requested subject object type on the permission or relation.

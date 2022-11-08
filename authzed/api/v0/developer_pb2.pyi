@@ -19,6 +19,7 @@ else:
 
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor
 
+@typing_extensions.final
 class FormatSchemaRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -33,6 +34,7 @@ class FormatSchemaRequest(google.protobuf.message.Message):
 
 global___FormatSchemaRequest = FormatSchemaRequest
 
+@typing_extensions.final
 class FormatSchemaResponse(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -52,6 +54,7 @@ class FormatSchemaResponse(google.protobuf.message.Message):
 
 global___FormatSchemaResponse = FormatSchemaResponse
 
+@typing_extensions.final
 class UpgradeSchemaRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -67,6 +70,7 @@ class UpgradeSchemaRequest(google.protobuf.message.Message):
 
 global___UpgradeSchemaRequest = UpgradeSchemaRequest
 
+@typing_extensions.final
 class UpgradeSchemaResponse(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -86,6 +90,7 @@ class UpgradeSchemaResponse(google.protobuf.message.Message):
 
 global___UpgradeSchemaResponse = UpgradeSchemaResponse
 
+@typing_extensions.final
 class ShareRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -109,6 +114,7 @@ class ShareRequest(google.protobuf.message.Message):
 
 global___ShareRequest = ShareRequest
 
+@typing_extensions.final
 class ShareResponse(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -123,6 +129,7 @@ class ShareResponse(google.protobuf.message.Message):
 
 global___ShareResponse = ShareResponse
 
+@typing_extensions.final
 class LookupShareRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -137,6 +144,7 @@ class LookupShareRequest(google.protobuf.message.Message):
 
 global___LookupShareRequest = LookupShareRequest
 
+@typing_extensions.final
 class LookupShareResponse(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -180,6 +188,7 @@ class LookupShareResponse(google.protobuf.message.Message):
 
 global___LookupShareResponse = LookupShareResponse
 
+@typing_extensions.final
 class RequestContext(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -198,6 +207,7 @@ class RequestContext(google.protobuf.message.Message):
 
 global___RequestContext = RequestContext
 
+@typing_extensions.final
 class EditCheckRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -218,6 +228,7 @@ class EditCheckRequest(google.protobuf.message.Message):
 
 global___EditCheckRequest = EditCheckRequest
 
+@typing_extensions.final
 class EditCheckResult(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -241,6 +252,7 @@ class EditCheckResult(google.protobuf.message.Message):
 
 global___EditCheckResult = EditCheckResult
 
+@typing_extensions.final
 class EditCheckResponse(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -260,6 +272,7 @@ class EditCheckResponse(google.protobuf.message.Message):
 
 global___EditCheckResponse = EditCheckResponse
 
+@typing_extensions.final
 class ValidateRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -285,6 +298,7 @@ class ValidateRequest(google.protobuf.message.Message):
 
 global___ValidateRequest = ValidateRequest
 
+@typing_extensions.final
 class ValidateResponse(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -307,6 +321,7 @@ class ValidateResponse(google.protobuf.message.Message):
 
 global___ValidateResponse = ValidateResponse
 
+@typing_extensions.final
 class DeveloperError(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 

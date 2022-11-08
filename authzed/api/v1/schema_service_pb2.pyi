@@ -14,6 +14,7 @@ else:
 
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor
 
+@typing_extensions.final
 class ReadSchemaRequest(google.protobuf.message.Message):
     """ReadSchemaRequest returns the schema from the database."""
 
@@ -25,6 +26,7 @@ class ReadSchemaRequest(google.protobuf.message.Message):
 
 global___ReadSchemaRequest = ReadSchemaRequest
 
+@typing_extensions.final
 class ReadSchemaResponse(google.protobuf.message.Message):
     """ReadSchemaResponse is the resulting data after having read the Object
     Definitions from a Schema.
@@ -44,6 +46,7 @@ class ReadSchemaResponse(google.protobuf.message.Message):
 
 global___ReadSchemaResponse = ReadSchemaResponse
 
+@typing_extensions.final
 class WriteSchemaRequest(google.protobuf.message.Message):
     """WriteSchemaRequest is the required data used to "upsert" the Schema of a
     Permissions System.
@@ -66,6 +69,7 @@ class WriteSchemaRequest(google.protobuf.message.Message):
 
 global___WriteSchemaRequest = WriteSchemaRequest
 
+@typing_extensions.final
 class WriteSchemaResponse(google.protobuf.message.Message):
     """WriteSchemaResponse is the resulting data after having written a Schema to
     a Permissions System.
