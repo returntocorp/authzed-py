@@ -1,0 +1,10 @@
+#!/usr/bin/env -S buf generate --verbose --debug -o ../ buf.build/envoyproxy/protoc-gen-validate:6607b10f00ed4a3d98f906807131c44a --template
+---
+version: "v1"
+plugins:
+  - remote: buf.build/protocolbuffers/plugins/python:v21.9.0-1
+    out: "."
+  - remote: buf.build/grpc/plugins/python:v1.50.0-1
+    out: "."
+  - name: "mypy"
+    out: "."
